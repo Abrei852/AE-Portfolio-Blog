@@ -19,5 +19,9 @@ export const HeroWrapper = styled.header`
         margin: 0 auto;
         max-width: 1170px;
     
+    `
+
+    export const Article = styled.article`
+        background-color: ${props => props.theme.colors.primary10}
     
 `
