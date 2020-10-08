@@ -7,7 +7,9 @@ export const HeroWrapper = styled.header`
     height: 100vh;
     background: var(--clr-primary-10);
     position: relative;
-    
+    image{
+        
+    }
     `
 
     export const Div = styled.div`
