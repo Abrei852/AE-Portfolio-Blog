@@ -1,5 +1,4 @@
 import "./src/css/main.css"
-import "./src/themes/themes"
 import React from "react"
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import { MDXProvider } from "@mdx-js/react"
