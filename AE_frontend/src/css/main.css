@@ -406,13 +406,6 @@ Hero
 ===============
 */
 /* underline added to globals */
-.hero {
-  margin-top: -5rem;
-  padding-top: 5rem;
-  height: 100vh;
-  background: var(--clr-primary-10);
-  position: relative;
-}
 
 .hero-center {
   height: 100%;
@@ -572,7 +565,7 @@ Jobs
   box-shadow: 0 2px var(--clr-primary-5);
 }
 .job-info {
-  /* min-height: 420px; */
+  min-height: 420px;
 }
 .job-info h3 {
   font-weight: 400;

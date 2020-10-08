@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
+import { HeroWrapper, Div } from "../elements"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
@@ -27,10 +28,10 @@ const Hero = () => {
   // console.log(data)
 
   return (
-    <header className="hero">
-      <div className="section-center hero-center">
+    <HeroWrapper>
+      <Div>
         <article className="hero-info">
-          <div>
+          
             <h1>I'm Sohail</h1>
             <div className="underline"></div>
             <h4>Utbildningsledare inom YH och utbildare inom IT</h4>
@@ -83,11 +84,10 @@ const Hero = () => {
               kontakta mig
             </Link>
             <SocialLinks />
-          </div>
         </article>
         <Image fluid={fluid} className="hero-img" />
-      </div>
-    </header>
+      </Div>
+    </HeroWrapper>
   )
 }
 export default Hero
