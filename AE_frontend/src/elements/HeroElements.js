@@ -7,10 +7,24 @@ export const HeroWrapper = styled.header`
     height: 100vh;
     background: ${props => props.theme.colors.primary10};
     position: relative;
+    text-align: center;
+
 
     Img{
         display: none;
     }
+
+    ul{
+        margin-top: 2rem;
+        text-align: left;
+
+    }
+
+    li{
+        margin-top: 0.5rem;
+    }
+
+
     @media ${props => props.theme.breakpoints.LargeScreen}{
         Img{
             display: block;
@@ -31,7 +45,6 @@ export const HeroWrapper = styled.header`
     
     `
     export const Article = styled.article`
-        background-color: ${props => props.theme.colors.primary10};
         margin: auto;
     
 `

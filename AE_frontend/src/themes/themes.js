@@ -35,6 +35,15 @@ export default {
     breakpoints: {
         MediumScreen: "only screen and (min-width: 768px)",  
         LargeScreen: "only screen and (min-width: 992px)",  
-    }
+    },
     //--- /BREAKPOINTS ---\\
+
+    //--- FONT SIZES ---\\
+    fontsizes:{
+        xsmall: "0.9rem",
+        small: "1.2rem",
+        medium: "1.7rem",
+        large: "2.2rem",
+    }
+    //--- /FONT SIZES ---\\
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { FaHeart } from "react-icons/fa"
-import { HeroWrapper, Div, Article } from "../elements"
+import { HeroWrapper, Div, Article, H1, H2 } from "../elements"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
@@ -32,22 +32,24 @@ const Hero = () => {
     <HeroWrapper>
       <Div>
         <Article>
+
+        <H1>Abraham Eishow</H1>
+
+        <H2>Systemutvecklare .Net</H2>
           <ul>
 
             <li>
-              <h1>Abraham Eishow</h1>
-            </li>
-            
-
-            <li>
-              - <FaHeart size={13} /> {" "}
-            <a
+             <FaHeart size={15} color="purple" /> 
+              
+            {" "}
+            | <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/"
             >
               C#
-            </a>,
+            </a> |
+
             {" "}
             <a
               target="_blank"
@@ -55,49 +57,72 @@ const Hero = () => {
               href="https://reactjs.org/docs/getting-started.html"
             >
               React
-            </a>
-            </li>
+            </a> |
 
-          </ul>
-
-            <div className="underline"></div>
-            <h4>Systemutvecklare .Net</h4>
-            - 🔭 I’m currently working on my own Portfolio site
-            <br />
-            - 🌱 I’m currently learning React, Gatsby, GraphQL and Strapi
-            <br />
-            - 🤔 I’m looking for help with anything frontend 
-            <br />
-            - 💬 Ask me about Rhodesian Ridgebacks
-            <br />
-            - 😄 Pronouns: Inquisitive, break the mold.. <br />- 💜{" "}
-
-            ,{" "}
-
-            ,{" "}
+            {" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.gatsbyjs.org/docs/"
             >
               Gatsby
-            </a>{" "}
-            ,{" "}
+            </a> |
+            
+            {" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://styled-components.com/docs"
             >
               Styled Components
-            </a>
-            <br />
+            </a> |
+
+            {" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dotnet.microsoft.com/apps/xamarin"
+            >
+              Xamarin
+            </a> |
+            </li>
+
+            <li>
+            - 🔭 I’m currently working on my own Portfolio site
+            </li>
+
+            <li>
+            - 🌱 I’m currently learning React, Gatsby, GraphQL and Strapi
+            </li>
+
+            <li>
+            - 🤔 I’m looking for help with anything frontend 
+            </li>
+
+            <li>
+            - 💬 Ask me about Rhodesian Ridgebacks
+            </li>
+
+            <li>
+            - 😄 Pronouns: Inquisitive, break the mold..
+            </li>
+
+            <li>
             - ⚡ Fun fact: I used to fly planes
-            <br />
+            </li>
+
+            <li>
             - 📫 How to reach me: use the link below
-            <br />
-            <Link to="/contact" className="btn">
+            </li>
+            
+            <li>
+            <Link to="/contact/">
               kontakta mig
             </Link>
+            </li>
+          </ul>
+
+
             <SocialLinks />
         </Article>
         <Image fluid={fluid} />
