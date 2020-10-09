@@ -92,7 +92,7 @@ const Hero = () => {
             </li>
 
             <li>
-            - 🌱 I’m currently learning React, Gatsby, GraphQL and Strapi
+            - 🌱 I’m currently learning React, Gatsby, GraphQL
             </li>
 
             <li>
@@ -122,10 +122,9 @@ const Hero = () => {
             </li>
           </ul>
 
-
-            <SocialLinks />
         </Article>
-        <Image fluid={fluid} />
+        <SocialLinks />
+
       </Div>
     </HeroWrapper>
   )

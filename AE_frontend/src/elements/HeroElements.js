@@ -1,27 +1,22 @@
 import styled from "styled-components"
 
 export const HeroWrapper = styled.header`
-
-    margin-top: -5rem;
-    padding-top: 10rem;
-    height: 100vh;
+    padding-top: 3rem;
     background: ${props => props.theme.colors.primary10};
     position: relative;
     text-align: center;
-
 
     Img{
         display: none;
     }
 
     ul{
-        margin-top: 2rem;
         text-align: left;
-
+        margin: 2rem auto 3rem auto;
     }
 
     li{
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
     }
 
 
@@ -36,15 +31,9 @@ export const HeroWrapper = styled.header`
     `
     export const Div = styled.div`
 
-        height: 100%;
         display: grid;
-        align-items: center;
-        width: 90vw;
-        margin: 0 auto;
-        max-width: 1170px;
-    
+        max-width: 1170px;  
     `
     export const Article = styled.article`
-        margin: auto;
-    
+    margin: 0 auto;
 `
