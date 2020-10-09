@@ -5,13 +5,21 @@ export const HeroWrapper = styled.header`
     margin-top: -5rem;
     padding-top: 10rem;
     height: 100vh;
-    background: var(--clr-primary-10);
+    background: ${props => props.theme.colors.primary10};
     position: relative;
-    image{
-        
-    }
-    `
 
+    Img{
+        display: none;
+    }
+    @media ${props => props.theme.breakpoints.LargeScreen}{
+        Img{
+            display: block;
+            grid-row: 1/1;
+            grid-column: 6/-1;
+        }
+    }
+
+    `
     export const Div = styled.div`
 
         height: 100%;
@@ -22,8 +30,8 @@ export const HeroWrapper = styled.header`
         max-width: 1170px;
     
     `
-
     export const Article = styled.article`
-        background-color: ${props => props.theme.colors.primary10}
+        background-color: ${props => props.theme.colors.primary10};
+        margin: auto;
     
 `

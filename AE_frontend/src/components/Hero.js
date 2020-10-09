@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
+import { FaHeart } from "react-icons/fa"
 import { HeroWrapper, Div, Article } from "../elements"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
@@ -31,27 +32,23 @@ const Hero = () => {
     <HeroWrapper>
       <Div>
         <Article>
-          
-            <h1>I'm Sohail</h1>
-            <div className="underline"></div>
-            <h4>Utbildningsledare inom YH och utbildare inom IT</h4>
-            - 🔭 I’m currently working on my own Portfolio site
-            <br />
-            - 🌱 I’m currently learning React, Gatsby, GraphQL and Strapi
-            <br />
-            - 🤔 I’m looking for help with anything frontend :)
-            <br />
-            - 💬 Ask me about Rhodesian Ridgebacks
-            <br />
-            - 😄 Pronouns: Inquisitive, break the mold.. <br />- 💜{" "}
+          <ul>
+
+            <li>
+              <h1>Abraham Eishow</h1>
+            </li>
+            
+
+            <li>
+              - <FaHeart size={13} /> {" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://strapi.io/documentation/v3.x/getting-started/introduction.html"
+              href="https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/"
             >
-              Strapi
-            </a>
-            ,{" "}
+              C#
+            </a>,
+            {" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -59,6 +56,24 @@ const Hero = () => {
             >
               React
             </a>
+            </li>
+
+          </ul>
+
+            <div className="underline"></div>
+            <h4>Systemutvecklare .Net</h4>
+            - 🔭 I’m currently working on my own Portfolio site
+            <br />
+            - 🌱 I’m currently learning React, Gatsby, GraphQL and Strapi
+            <br />
+            - 🤔 I’m looking for help with anything frontend 
+            <br />
+            - 💬 Ask me about Rhodesian Ridgebacks
+            <br />
+            - 😄 Pronouns: Inquisitive, break the mold.. <br />- 💜{" "}
+
+            ,{" "}
+
             ,{" "}
             <a
               target="_blank"
@@ -78,16 +93,17 @@ const Hero = () => {
             <br />
             - ⚡ Fun fact: I used to fly planes
             <br />
-            - 📫 How to reach me: use the link below :)
+            - 📫 How to reach me: use the link below
             <br />
             <Link to="/contact" className="btn">
               kontakta mig
             </Link>
             <SocialLinks />
         </Article>
-        <Image fluid={fluid} className="hero-img" />
+        <Image fluid={fluid} />
       </Div>
     </HeroWrapper>
   )
 }
+
 export default Hero
