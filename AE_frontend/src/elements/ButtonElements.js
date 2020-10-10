@@ -13,6 +13,8 @@ transition: filter 0.3s ease;
 text-decoration: none;
 background-color: ${props => props.theme.colors.beautifulsky};
 color: white;
+padding: 1.4rem;
+
 &:hover,
 &:focus {
   filter: brightness(107%);
