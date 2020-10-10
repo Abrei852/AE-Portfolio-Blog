@@ -2,6 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { FaHeart } from "react-icons/fa"
 import { HeroWrapper, Div, Article, H1, H2 } from "../elements"
+import { Button } from "../components"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
@@ -116,14 +117,14 @@ const Hero = () => {
             </li>
             
             <li>
-            <Link to="/contact/">
-              kontakta mig
-            </Link>
+            <Button href="/contact/">
+              Kontakta mig
+            </Button>
             </li>
           </ul>
 
+          <SocialLinks />
         </Article>
-        <SocialLinks />
 
       </Div>
     </HeroWrapper>

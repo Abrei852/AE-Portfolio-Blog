@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const HeroWrapper = styled.header`
     padding-top: 3rem;
-    background: ${props => props.theme.colors.primary10};
+    background: white;
     position: relative;
     text-align: center;
 
@@ -13,6 +13,10 @@ export const HeroWrapper = styled.header`
     ul{
         text-align: left;
         margin: 2rem auto 3rem auto;
+        padding: 3rem;
+        box-shadow: ${props => props.theme.shadows.shadow1};
+        background: ${props => props.theme.colors.primary10};
+
     }
 
     li{
@@ -36,4 +40,5 @@ export const HeroWrapper = styled.header`
     `
     export const Article = styled.article`
     margin: 0 auto;
+
 `

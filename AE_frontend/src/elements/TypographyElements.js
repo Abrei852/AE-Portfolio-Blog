@@ -18,7 +18,7 @@ export const H1 = styled.h1`
                 return props.theme.fontsizes.large
 
             default:
-                return props.theme.fontsizes.large
+                return props.theme.fontsizes.medium
         }
     }};
 `
