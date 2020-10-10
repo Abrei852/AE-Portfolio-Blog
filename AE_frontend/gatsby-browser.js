@@ -23,6 +23,13 @@ body {
   font-size: 0.875rem;
   margin-top: 5rem;
 }
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 
 `
 
