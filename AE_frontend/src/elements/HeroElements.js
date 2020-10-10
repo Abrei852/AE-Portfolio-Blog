@@ -34,8 +34,29 @@ export const HeroWrapper = styled.header`
         display: grid;
         max-width: 1170px;
         box-shadow: ${props => props.theme.shadows.shadow2};
+
+
+        //Here or Article
+        @media ${props => props.theme.breakpoints.largescreen}{
+            grid-row: 1/1;
+            grid-column: 1 / span 8;
+            
+            :before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 65%;
+                right: 0;
+                bottom: 0;
+                background: white;
+            }
+ 
+        }
     `
     export const Article = styled.article`
-    margin: 1.5rem auto 0 auto;
+        margin: 1.5rem auto 0 auto;
+
+
+
     
 `
