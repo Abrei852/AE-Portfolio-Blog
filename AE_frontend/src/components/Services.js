@@ -1,10 +1,10 @@
 import React from "react"
 import Title from "./Title"
-import { Section } from "../elements"
+import { Section } from "../elements/ServicesElements"
 import services from "../constants/services"
 const Services = () => {
   return (
-    <Section className="section bg-grey">
+    <Section>
       <Title title="Tjänster" />
       <div className="section-center services-center">
         {services.map(service => {
