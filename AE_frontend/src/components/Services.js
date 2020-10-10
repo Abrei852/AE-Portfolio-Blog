@@ -1,11 +1,11 @@
 import React from "react"
 import Title from "./Title"
-import { Section, Div, Article } from "../elements/ServicesElements"
+import { ServicesWrapper, Div, Article } from "../elements/ServicesElements"
 import { Underline } from "../elements/SpecialElements"
 import services from "../constants/services"
 const Services = () => {
   return (
-    <Section>
+    <ServicesWrapper>
       <Title title="Tjänster" />
       <Div >
         {services.map(service => {
@@ -22,7 +22,7 @@ const Services = () => {
           )
         })}
       </Div>
-    </Section>
+    </ServicesWrapper>
   )
 }
 
