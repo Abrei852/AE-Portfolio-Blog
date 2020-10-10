@@ -374,17 +374,6 @@ Jobs
 ===============
 */
 
-.jobs-center {
-  width: 80vw;
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
-.btn-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 4rem;
-}
 .job-btn {
   background: transparent;
   border-color: transparent;

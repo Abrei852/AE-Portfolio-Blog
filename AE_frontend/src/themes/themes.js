@@ -1,5 +1,9 @@
 export default {
 
+    //--- MAX WIDTH ---\\
+    width: {
+        width1: "1170px",
+    },
     
     //--- COLORS ---\\
     colors: {
