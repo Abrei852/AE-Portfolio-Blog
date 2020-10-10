@@ -36,8 +36,11 @@ export const Section = styled.section`
         }
 
         :hover{
-            background: ${props => props.theme.colors.primary7};
-            color: ${props => props.theme.colors.primary10};
+            background: ${props => props.theme.colors.beautifulsky};
+            color: white;
+            div{
+                background: white;
+            }
         }
         `  
         

@@ -20,7 +20,8 @@ export const HeroWrapper = styled.header`
     }
 
 
-    @media ${props => props.theme.breakpoints.LargeScreen}{
+    @media ${props => props.theme.breakpoints.largescreen}{
+
         Img{
             display: block;
             grid-row: 1/1;
@@ -32,15 +33,14 @@ export const HeroWrapper = styled.header`
     export const Div = styled.div`
 
         display: grid;
-        max-width: 1170px;
         box-shadow: ${props => props.theme.shadows.shadow2};
 
 
         //Here or Article
-        @media ${props => props.theme.breakpoints.largescreen}{
-            grid-row: 1/1;
-            grid-column: 1 / span 8;
-            
+        @media ${props => props.theme.breakpoints.xlargescreen}{
+            grid-row: 2/1;
+            grid-column: 2 / span 1;
+
             :before{
                 content: "";
                 position: absolute;
@@ -55,6 +55,9 @@ export const HeroWrapper = styled.header`
     `
     export const Article = styled.article`
         margin: 1.5rem auto 0 auto;
+        @media ${props => props.theme.breakpoints.largescreen}{
+            margin: 1.5rem auto 0 auto;
+        }
 
 
 
