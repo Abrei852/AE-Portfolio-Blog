@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { FaHeart } from "react-icons/fa"
-import { HeroWrapper, Div, Article, H1, H2 } from "../elements"
+import { HeroWrapper, Div, Article, H1, H2, Underline } from "../elements"
 import { Button } from "../components"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
@@ -37,6 +37,8 @@ const Hero = () => {
         <H1>Abraham Eishow</H1>
 
         <H2>Systemutvecklare .Net</H2>
+
+        <Underline/>
           <ul>
 
             <li>

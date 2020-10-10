@@ -1,11 +1,13 @@
 import React from "react"
+import { Div } from "../elements/TitleElements"
+import { Underline } from "../elements/SpecialElements"
 
 const Title = ({ title }) => {
   return (
-    <div className="section-title">
+    <Div>
       <h2>{title || "default title"}</h2>
-      <div className="underline"></div>
-    </div>
+      <Underline/>
+    </Div>
   )
 }
 

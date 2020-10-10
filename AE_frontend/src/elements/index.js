@@ -1,3 +1,5 @@
 export * from "./HeroElements"
 export * from "./TypographyElements"
 export * from "./ButtonElements"
+export * from "./TitleElements"
+export * from "./SpecialElements"

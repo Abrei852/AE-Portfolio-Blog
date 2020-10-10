@@ -10,27 +10,27 @@ import {
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+    icon: <FaFacebookSquare className="social-icon"size={45}></FaFacebookSquare>,
     url: "https://www.twitter.com",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    icon: <FaLinkedin className="social-icon"size={45}></FaLinkedin>,
     url: "https://www.twitter.com",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
+    icon: <FaDribbbleSquare className="social-icon" size={45}></FaDribbbleSquare>,
     url: "https://www.twitter.com",
   },
   {
     id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
+    icon: <FaBehanceSquare className="social-icon" size={45}></FaBehanceSquare>,
     url: "https://www.twitter.com",
   },
   {
     id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
+    icon: <FaTwitterSquare className="social-icon"size={45}></FaTwitterSquare>,
     url: "https://www.twitter.com",
   },
 ]

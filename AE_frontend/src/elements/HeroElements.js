@@ -28,7 +28,7 @@ export const HeroWrapper = styled.header`
         }
     }
 
-    `
+`
     export const Div = styled.div`
 
         display: grid;
@@ -37,5 +37,5 @@ export const HeroWrapper = styled.header`
     `
     export const Article = styled.article`
     margin: 1.5rem auto 0 auto;
-
+    
 `
