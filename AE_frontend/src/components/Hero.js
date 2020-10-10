@@ -115,14 +115,8 @@ const Hero = () => {
             <li>
             - 📫 How to reach me: use the link below
             </li>
-            
-            <li>
-            <Button href="/contact/">
-              Kontakta mig
-            </Button>
-            </li>
           </ul>
-
+          <Button href="/contact/">Kontakta mig</Button>
           <SocialLinks />
         </Article>
 

@@ -28,6 +28,9 @@ export default {
         grey6: "hsl(210, 31%, 80%)",
         grey7: "hsl(212, 33%, 89%)",
         grey8: "hsl(210, 36%, 96%)",
+
+        //Lightblue color
+        beautifulsky: "hsla(197, 64%, 80%, 1)"
     },
     //--- /COLORS ---\\
 

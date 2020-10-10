@@ -13,10 +13,6 @@ export const HeroWrapper = styled.header`
     ul{
         text-align: left;
         margin: 2rem auto 3rem auto;
-        padding: 3rem;
-        box-shadow: ${props => props.theme.shadows.shadow1};
-        background: ${props => props.theme.colors.primary10};
-
     }
 
     li{
@@ -36,9 +32,10 @@ export const HeroWrapper = styled.header`
     export const Div = styled.div`
 
         display: grid;
-        max-width: 1170px;  
+        max-width: 1170px;
+        box-shadow: ${props => props.theme.shadows.shadow2};
     `
     export const Article = styled.article`
-    margin: 0 auto;
+    margin: 1.5rem auto 0 auto;
 
 `
