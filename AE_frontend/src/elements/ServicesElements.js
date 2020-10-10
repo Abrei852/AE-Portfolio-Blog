@@ -27,8 +27,6 @@ export const ServicesWrapper = styled.section`
         margin-bottom: 2rem;
         border-radius: var(--radius);
         text-align: center;
-        -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear;
         box-shadow: ${props => props.theme.shadows.shadow2};
 
         svg{
