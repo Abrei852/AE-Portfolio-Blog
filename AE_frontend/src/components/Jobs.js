@@ -41,15 +41,20 @@ const Jobs = () => {
       <JobsCenter>
         {/* btn container */}
         <ButtonWrapper>
+
           {jobs.map((item, index) => {
+
             return (
               <button
                 key={item.strapiId}
                 onClick={() => setValue(index)}
-                className={`job-btn ${index === value && "active-btn"}`}
+                // className={` ${index === value && "active-btn"}`}
+                active={ index === value }
+
               >
                 {item.company}
               </button>
+
             )
           })}
         </ButtonWrapper>
