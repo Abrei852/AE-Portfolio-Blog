@@ -4,7 +4,6 @@ export const HeroWrapper = styled.header`
     padding-top: 3rem;
     background: white;
     position: relative;
-    text-align: center;
 
     Img{
         display: none;

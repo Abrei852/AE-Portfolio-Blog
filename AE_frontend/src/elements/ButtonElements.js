@@ -14,6 +14,11 @@ text-decoration: none;
 background-color: ${props => props.theme.colors.beautifulsky};
 box-shadow: ${props => props.theme.colors.shadow1};
 color: white;
+display: block;
+width: 15rem;
+text-align: center;
+margin: 0 auto;
+margin-top: 3rem;           
 
 &:hover,
 &:focus {

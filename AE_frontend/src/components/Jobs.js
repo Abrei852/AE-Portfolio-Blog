@@ -1,6 +1,7 @@
 import React from "react"
 import Title from "./Title"
 import { JobsWrapper,JobsCenter, ButtonWrapper } from "../elements/JobsElements"
+import { Button } from "./Button"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
@@ -67,9 +68,7 @@ const Jobs = () => {
           })}
         </article>
       </JobsCenter>
-      <Link to="/about" className="btn center-btn">
-        Mitt CV
-      </Link>
+      <Button>Mitt CV</Button>
     </JobsWrapper>
   )
 }
