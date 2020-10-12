@@ -50,7 +50,6 @@ const Jobs = () => {
               >
                 {item.company}
               </button>
-
             )
           })}
         </ButtonWrapper>

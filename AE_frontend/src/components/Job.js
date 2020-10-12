@@ -1,5 +1,5 @@
 import React from "react"
-import { JobWrapper } from "../elements/JobElements"
+import { JobWrapper, Div } from "../elements/JobElements"
 import { H3, H4, P} from "../elements/TypographyElements"
 
 export const Job = ({position, company, desc, date}) => {
@@ -11,9 +11,9 @@ export const Job = ({position, company, desc, date}) => {
             <P>{date}</P>
             {desc.map(item => {
                 return(
-                    <div key={item.id}>
-                    <p>{item.name}</p>
-                </div>
+                    <Div key={item.id}>
+                    <P>{item.name}</P>
+                </Div>
                 )
             })}
         </JobWrapper>
