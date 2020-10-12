@@ -2,13 +2,14 @@ import styled from "styled-components"
 //Fixa!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export const JobsWrapper = styled.section`
     padding: 5rem 0;
-
     `
-    export const JobsCenter = styled.div`
+
+    export const JobsContainer = styled.div`
         width: 80vw;
         margin: 0 auto;
         max-width: var(--max-width);
         `
+
         export const ButtonWrapper = styled.div`
             display: flex;
             flex-direction: row;
@@ -22,19 +23,13 @@ export const JobsWrapper = styled.section`
                 font-size: 1.25rem;
                 letter-spacing: var(--spacing);
                 margin: 0 0.5rem;
-                transition: var(--transition);
                 cursor: pointer;
                 padding: 0.25rem 0;
                 line-height: 1;
 
                 :focus{
-                    color: ${({ active }) => active ? 'black' : "white"};  color: var(--clr-primary-5);
-                    box-shadow: 0 2px var(--clr-primary-5);
+                    color: ${({ active }) => active ? 'black' : props => props.theme.colors.beautifulsky};  
+                    box-shadow: 0 2px ${props => props.theme.colors.beautifulsky};
                 }
             }
         `
-    
-
-
-
-console.log();

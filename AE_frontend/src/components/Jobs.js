@@ -1,10 +1,10 @@
 import React from "react"
 import Title from "./Title"
-import { JobsWrapper,JobsCenter, ButtonWrapper } from "../elements/JobsElements"
+import { JobsWrapper,JobsContainer, ButtonWrapper } from "../elements/JobsElements"
+import { Job } from "./Job"
 import { Button } from "./Button"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
 
 const query = graphql`
   {
@@ -38,19 +38,15 @@ const Jobs = () => {
   return (
     <JobsWrapper>
       <Title title="erfarenhet" />
-      <JobsCenter>
+      <JobsContainer>
         {/* btn container */}
         <ButtonWrapper>
-
           {jobs.map((item, index) => {
-
             return (
               <button
                 key={item.strapiId}
                 onClick={() => setValue(index)}
-                // className={` ${index === value && "active-btn"}`}
-                active={ index === value }
-
+                active={ index === value.toString() ? "true" : "false" }
               >
                 {item.company}
               </button>
@@ -59,20 +55,8 @@ const Jobs = () => {
           })}
         </ButtonWrapper>
         {/* job info */}
-        <article className="job-info">
-          <h3>{position}</h3>
-          <h4>{company}</h4>
-          <p className="job-date">{date}</p>
-          {desc.map(item => {
-            return (
-              <div key={item.id} className="job-desc">
-                <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{item.name}</p>
-              </div>
-            )
-          })}
-        </article>
-      </JobsCenter>
+          <Job date = {date} position={position} company={company} desc={desc}/>
+      </JobsContainer>
       <Button>Mitt CV</Button>
     </JobsWrapper>
   )
