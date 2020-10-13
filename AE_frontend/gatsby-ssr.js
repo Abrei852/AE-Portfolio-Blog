@@ -5,7 +5,6 @@ import { MDXProvider } from "@mdx-js/react"
 // import { preToCodeBlock } from "mdx-utils"
 import Theme from "./src/themes/themes"
 // import { Table, Code } from "./src/components"
-import "./language-tabs.css"
 
 const GlobalStyles = createGlobalStyle`
 *,
