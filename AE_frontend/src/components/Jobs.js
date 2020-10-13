@@ -1,6 +1,6 @@
 import React from "react"
 import Title from "./Title"
-import { JobsWrapper,JobsContainer, ButtonWrapper } from "../elements/JobsElements"
+import { JobsWrapper, Div , ButtonWrapper } from "../elements/JobsElements"
 import { Job } from "./Job"
 import { Button } from "./Button"
 import { FaAngleDoubleRight } from "react-icons/fa"
@@ -38,7 +38,7 @@ const Jobs = () => {
   return (
     <JobsWrapper>
       <Title title="erfarenhet" />
-      <JobsContainer>
+      <Div>
         {/* btn container */}
         <ButtonWrapper>
           {jobs.map((item, index) => {
@@ -55,7 +55,7 @@ const Jobs = () => {
         </ButtonWrapper>
         {/* job info */}
           <Job date = {date} position={position} company={company} desc={desc}/>
-      </JobsContainer>
+      </Div>
       <Button>Mitt CV</Button>
     </JobsWrapper>
   )
