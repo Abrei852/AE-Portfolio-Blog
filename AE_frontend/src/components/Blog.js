@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { BlogWrapper } from "../elements/BlogElements"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
   return (
     <Link to={`/blogs/${slug}`} key={id}>
-      <article className="blog">
+      <BlogWrapper>
         {/* if image is not supplied, instead of breaking, dont show any image */}
         {image && (
           <Image fluid={image.childImageSharp.fluid} className="blog-img" />
@@ -19,7 +20,7 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
             <p>{date}</p>
           </div>
         </div>
-      </article>
+      </BlogWrapper>
     </Link>
   )
 }

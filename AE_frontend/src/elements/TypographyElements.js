@@ -44,13 +44,49 @@ export const H2 = styled.h2`
         }
     }};
 `
-//Switch case
 //Styling for the H3 tag
 export const H3 = styled.h3`
+    font-size: ${props => {
+        switch(props.fontsize){
+
+            case "xsmall":
+                return props.theme.fontsizes.xsmall
+            
+            case "small":
+                return props.theme.fontsizes.small
+            
+            case "medium":
+                return props.theme.fontsizes.medium
+            
+            case "large":
+                return props.theme.fontsizes.large
+
+            default:
+                return props.theme.fontsizes.small
+        }
+    }};
     font-weight: 400;
 `
 //styling fro the H4 tag
 export const H4 = styled.h4`
+    font-size: ${props => {
+        switch(props.fontsize){
+            case "xsmall":
+                return props.theme.fontsizes.xsmall
+            
+            case "small":
+                return props.theme.fontsizes.small
+            
+            case "medium":
+                return props.theme.fontsizes.medium
+            
+            case "large":
+                return props.theme.fontsizes.large
+
+            default:
+                return props.theme.fontsizes.small
+        }
+    }};
     text-transform: uppercase;
     color: ${props => props.theme.colors.grey5};
     background: ${props => props.theme.colors.grey7};

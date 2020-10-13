@@ -501,7 +501,6 @@ Blog
   background: var(--clr-grey-10);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
-  transition: var(--transition);
 }
 .blog:hover {
   box-shadow: var(--dark-shadow);
