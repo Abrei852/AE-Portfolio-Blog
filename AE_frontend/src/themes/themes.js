@@ -61,4 +61,18 @@ export default {
         shadow2: "0px 5px 20px rgba(173, 219, 237, 1)",
       },
     //--- /SHADOWS ---\\
+
+    //--- TEXT TRANSFORM ---\\
+    transform: {
+        UC: "uppercase",
+        LC: "lowercase",
+    },
+    //--- /TEXT TRANSFORM ---\\
+
+    //--- TEXT ALIGN ---\\
+    align: {
+        left: "left",
+        center: "center",
+        right: "right",
+    },
 }

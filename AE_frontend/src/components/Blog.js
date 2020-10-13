@@ -12,15 +12,6 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
         {image && (
           <Image fluid={image.childImageSharp.fluid} className="blog-img" />
         )}
-        <div className="blog-card">
-          {/* if title is not supplied, set a defualt title */}
-          <h4>{title || "Ariklar"}</h4>
-          <p>{desc}</p>
-          <div className="blog-footer">
-            <p>{category}</p>
-            <p>{date}</p>
-          </div>
-        </div>
         <BlogCard title={title} desc={desc} category={category} date={date}/>
       </BlogWrapper>
     </Link>

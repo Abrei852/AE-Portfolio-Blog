@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 //Styling for the H1 tag
 export const H1 = styled.h1`
+
+    //Font Size
     font-size: ${props => {
         switch(props.fontsize){
 
@@ -19,11 +21,26 @@ export const H1 = styled.h1`
 
             default:
                 return props.theme.fontsizes.medium
+        }
+    }};
+
+    text-transform: ${props => {
+        switch(props.transform){
+            case "uc":
+                return props.theme.transform.UC
+
+            case "lc":
+                return props.theme.transform.LC
+
+            default:
+                return props.theme.transform.LC
         }
     }};
 `
 //Styling for the H2 tag
 export const H2 = styled.h2`
+
+    //Font Size
     font-size: ${props => {
         switch(props.fontsize){
 
@@ -43,9 +60,24 @@ export const H2 = styled.h2`
                 return props.theme.fontsizes.small
         }
     }};
+
+    text-transform: ${props => {
+        switch(props.transform){
+            case "uc":
+                return props.theme.transform.UC
+
+            case "lc":
+                return props.theme.transform.LC
+
+            default:
+                return props.theme.transform.LC
+        }
+    }};
 `
 //Styling for the H3 tag
 export const H3 = styled.h3`
+
+    //Font Size
     font-size: ${props => {
         switch(props.fontsize){
 
@@ -63,12 +95,27 @@ export const H3 = styled.h3`
 
             default:
                 return props.theme.fontsizes.small
+        }
+    }};
+
+    text-transform: ${props => {
+        switch(props.transform){
+            case "uc":
+                return props.theme.transform.UC
+
+            case "lc":
+                return props.theme.transform.LC
+
+            default:
+                return props.theme.transform.LC
         }
     }};
     font-weight: 400;
 `
 //styling fro the H4 tag
 export const H4 = styled.h4`
+
+    //Font Size
     font-size: ${props => {
         switch(props.fontsize){
             case "xsmall":
@@ -87,7 +134,34 @@ export const H4 = styled.h4`
                 return props.theme.fontsizes.small
         }
     }};
-    text-transform: uppercase;
+
+    text-align: ${props => {
+        switch(props.align){
+            case "left":
+                return props.theme.align.left
+
+            case "center":
+                return props.theme.align.center
+            
+            case "right":
+                return props.theme.align.right
+            
+            default:
+                return props.theme.align.left
+        }
+    }};
+    text-transform: ${props => {
+        switch(props.transform){
+            case "uc":
+                return props.theme.transform.UC
+
+            case "lc":
+                return props.theme.transform.LC
+
+            default:
+                return props.theme.transform.LC
+        }
+    }};
     color: ${props => props.theme.colors.grey5};
     background: ${props => props.theme.colors.grey7};
     display: inline-block;
@@ -97,4 +171,17 @@ export const H4 = styled.h4`
 //Styling for the P tag
 export const P = styled.p`
     letter-spacing: 0.2rem;
+
+    text-transform: ${props => {
+        switch(props.transform){
+            case "uc":
+                return props.theme.transform.UC
+
+            case "lc":
+                return props.theme.transform.LC
+
+            default:
+                return props.theme.transform.LC
+        }
+    }};
 `
