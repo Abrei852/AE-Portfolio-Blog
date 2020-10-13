@@ -6,5 +6,7 @@ export const BlogCardWrapper = styled.div`
     padding: 1.5rem 1rem;
 `
 export const Div = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
