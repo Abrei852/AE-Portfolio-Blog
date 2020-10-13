@@ -3,7 +3,6 @@ import { JobWrapper, Div } from "../elements/JobElements"
 import { H3, H4, P} from "../elements/TypographyElements"
 
 export const Job = ({position, company, desc, date}) => {
-    console.log(date);
     return(
         <JobWrapper>
             <H3>{position}</H3>
