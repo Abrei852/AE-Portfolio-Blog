@@ -3,7 +3,6 @@ import Title from "./Title"
 import Blog from "./Blog"
 import { Button } from "./Button"
 import { BlogsWrapper, Div } from "../elements/BlogsElements"
-import { Link } from "gatsby"
 export const Blogs = ({ blogs, title, showLink }) => {
   return (
     <BlogsWrapper>

@@ -13,7 +13,7 @@ transition: filter 0.3s ease;
 text-decoration: none;
 background-color: ${props => props.theme.colors.beautifulsky};
 box-shadow: ${props => props.theme.colors.shadow1};
-color: white;
+color: black;
 display: block;
 width: 15rem;
 text-align: center;
@@ -22,6 +22,6 @@ margin-top: 3rem;
 
 &:hover,
 &:focus {
-  filter: brightness(107%);
+  color: white;
 }
 `
