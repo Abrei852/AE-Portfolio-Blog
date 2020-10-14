@@ -76,4 +76,5 @@ export default {
         center: "center",
         right: "right",
     },
+    //--- /TEXT ALIGN ---\\
 }

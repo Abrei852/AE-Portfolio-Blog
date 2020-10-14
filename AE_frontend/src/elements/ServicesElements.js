@@ -25,7 +25,6 @@ export const ServicesWrapper = styled.section`
         background: white;
         padding: 3rem 1.5rem;
         margin-bottom: 2rem;
-        border-radius: var(--radius);
         text-align: center;
         box-shadow: ${props => props.theme.shadows.shadow2};
 
