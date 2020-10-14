@@ -4,11 +4,10 @@ export const BlogWrapper = styled.article`
     display: block;
     margin-bottom: 2rem;
     background: ${props => props.theme.colors.grey8};
-    border-radius: var(--radius);
-    box-shadow: var(--light-shadow);
+    box-shadow: ${props => props.theme.shadows.shadow2};
 
     :hover{
-        box-shadow: var(--dark-shadow);
+        box-shadow: ${props => props.theme.shadows.shadow3};
         transform: scale(1.02);
     }
 `
