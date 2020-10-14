@@ -1,13 +1,14 @@
 import styled from "styled-components"
 
-export const LinksWrapper = styled.div`
-    ul a{
+export const Ul = styled.ul`
+    
+    a{
         display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
         text-align: center;
         text-transform: capitalize;
         color: ${props => props.theme.colors.grey5};
         letter-spacing: 0.2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         font-size: 2rem;
     }
 

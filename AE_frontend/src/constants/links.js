@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { LinksWrapper } from "../elements/LinksElements"
+import { Ul } from "../elements/LinksElements"
 
 const data = [
   {
@@ -41,10 +41,8 @@ const tempLinks = data.map(link => {
 
 export default ( {toggleSidebar }) => {
   return (
-    <LinksWrapper toggleSidebar={toggleSidebar}>
-      <ul>
+      <Ul toggleSidebar={toggleSidebar}>
         {tempLinks}
-      </ul>
-    </LinksWrapper>
+      </Ul>
   )
 }
