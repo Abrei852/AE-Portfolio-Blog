@@ -5,7 +5,7 @@ import { H2 } from "../elements/TypographyElements"
 const Title = ({ title }) => {
   return (
     <Div>
-      <H2 fontsize="medium" transform="cap">{title || "default title"}</H2>
+      <H2 fontsize="medium" transform="cap" align="center">{title || "default title"}</H2>
       <Underline/>
     </Div>
   )

@@ -3,12 +3,12 @@ import styled from "styled-components"
 export const ProjectWrapper = styled.article`
     display: grid;
     margin-bottom: 4rem;
-    box-shadow: ${props => props.theme.shadows.shadow2};
+    background: ${props => props.theme.colors.grey8};
     cursor: pointer;
 
     :hover{
         transform: scale(1.02);
-        box-shadow: ${props => props.theme.shadows.shadow3};
+        box-shadow: ${props => props.theme.shadows.shadow2};
     }
 
     img{

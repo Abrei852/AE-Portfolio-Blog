@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { ProjectWrapper, InfoWrapper } from "../elements/ProjectElements"
+import { H2, H3, P } from "../elements/TypographyElements"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
@@ -12,10 +13,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         <Image fluid={image.childImageSharp.fluid}/>
       )}
       <InfoWrapper>
-        <span >0{index + 1}.</span>
+        <H2>0{index + 1}</H2>
         {/* if title is not supplied, set a defualt title */}
-        <h3>{title || "Projekt"}</h3>
-        <p className="project-description">{description}</p>
+        <H3 fontsize="medium" transform="cap" align="center">{title || "Projekt"}</H3>
+        <P fontsize="small" align="center">{description}</P>
         <div className="project-stack">
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>

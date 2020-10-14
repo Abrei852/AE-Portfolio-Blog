@@ -24,6 +24,22 @@ export const H1 = styled.h1`
         }
     }};
 
+    text-align: ${props => {
+        switch(props.align){
+            case "left":
+                return props.theme.align.left
+
+            case "center":
+                return props.theme.align.center
+            
+            case "right":
+                return props.theme.align.right
+            
+            default:
+                return props.theme.align.left
+        }
+    }};
+
     text-transform: ${props => {
         switch(props.transform){
             case "uc":
@@ -61,6 +77,22 @@ export const H2 = styled.h2`
 
             default:
                 return props.theme.fontsizes.small
+        }
+    }};
+
+    text-align: ${props => {
+        switch(props.align){
+            case "left":
+                return props.theme.align.left
+
+            case "center":
+                return props.theme.align.center
+            
+            case "right":
+                return props.theme.align.right
+            
+            default:
+                return props.theme.align.left
         }
     }};
 
@@ -117,6 +149,22 @@ export const H3 = styled.h3`
 
             default:
                 return props.theme.transform.LC
+        }
+    }};
+
+    text-align: ${props => {
+        switch(props.align){
+            case "left":
+                return props.theme.align.left
+
+            case "center":
+                return props.theme.align.center
+            
+            case "right":
+                return props.theme.align.right
+            
+            default:
+                return props.theme.align.left
         }
     }};
     font-weight: 400;
@@ -183,6 +231,41 @@ export const H4 = styled.h4`
 //Styling for the P tag
 export const P = styled.p`
     letter-spacing: 0.2rem;
+
+    font-size: ${props => {
+        switch(props.fontsize){
+            case "xsmall":
+                return props.theme.fontsizes.xsmall
+            
+            case "small":
+                return props.theme.fontsizes.small
+            
+            case "medium":
+                return props.theme.fontsizes.medium
+            
+            case "large":
+                return props.theme.fontsizes.large
+
+            default:
+                return props.theme.fontsizes.small
+        }
+    }};
+
+    text-align: ${props => {
+        switch(props.align){
+            case "left":
+                return props.theme.align.left
+
+            case "center":
+                return props.theme.align.center
+            
+            case "right":
+                return props.theme.align.right
+            
+            default:
+                return props.theme.align.left
+        }
+    }};
 
     text-transform: ${props => {
         switch(props.transform){
