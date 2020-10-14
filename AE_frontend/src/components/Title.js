@@ -1,11 +1,11 @@
 import React from "react"
 import { Div } from "../elements/TitleElements"
 import { Underline } from "../elements/SpecialElements"
-
+import { H2 } from "../elements/TypographyElements"
 const Title = ({ title }) => {
   return (
     <Div>
-      <h2>{title || "default title"}</h2>
+      <H2 fontsize="medium" transform="uc">{title || "default title"}</H2>
       <Underline/>
     </Div>
   )
