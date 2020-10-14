@@ -3,7 +3,7 @@ import Title from "./Title"
 import { Button } from "./Button"
 import Project from "./Project"
 import { Section, Div } from "../elements/ProjectsElements"
-import { Link } from "gatsby"
+
 const Projects = ({ projects, title, showLink }) => {
   return (
     <Section>
