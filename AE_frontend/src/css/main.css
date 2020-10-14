@@ -587,6 +587,7 @@ Footer
 }
 .footer-links {
   margin: 0 auto 1rem auto;
+  color: white;
 }
 .footer .social-link {
   color: var(--clr-white);
