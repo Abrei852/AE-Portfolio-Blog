@@ -1,10 +1,11 @@
 import React from "react"
 import Links from "../constants/links"
 import SocialLinks from "../constants/socialLinks"
+import { SidebarWrapper } from "../elements/SidebarElements"
 import { FaTimes } from "react-icons/fa"
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <aside className={`sidebar ${isOpen ? "show-sidebar" : ""} `}>
+    <SidebarWrapper isOpen={isOpen}>
       <button className="close-btn" onClick={toggleSidebar}>
         <FaTimes />
       </button>
@@ -12,7 +13,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
         <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} />
       </div>
-    </aside>
+    </SidebarWrapper>
   )
 }
 
