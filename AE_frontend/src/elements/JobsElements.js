@@ -5,9 +5,10 @@ export const JobsWrapper = styled.section`
     `
 
 export const Div = styled.div`
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
     max-width: var(--max-width);
+    padding: 0 1rem;
 
     @media ${props => props.theme.breakpoints.largescreen}{
         width: 90vw;
