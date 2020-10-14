@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Ul, Li } from "../elements/LinksElements"
 const data = [
   {
     id: 1,
@@ -37,10 +38,10 @@ const tempLinks = data.map(link => {
 })
 // I KNOW WE CAN COMBINE IT !!!!!
 
-export default ({ styleClass }) => {
+export default () => {
   return (
-    <ul className={`page-links ${styleClass ? styleClass : ""}`}>
+    <Ul>
       {tempLinks}
-    </ul>
+    </Ul>
   )
 }

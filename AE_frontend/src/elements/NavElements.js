@@ -11,7 +11,7 @@ export const NavWrapper = styled.nav`
     z-index: 200;
     background-color: white;
 
-    @media ${props => props.theme.breakpoints.largescreen}{
+    @media ${props => props.theme.breakpoints.mediumscreen}{
         background: transparent;
     }
 `
@@ -20,7 +20,7 @@ export const Div = styled.div`
     max-width: 1170px;
     margin: 0 auto;
 
-    @media ${props => props.theme.breakpoints.largescreen}{
+    @media ${props => props.theme.breakpoints.mediumscreen}{
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
@@ -37,5 +37,11 @@ export const NavHeaderWrapper = styled.div`
         border-color: transparent;
         color: ${props => props.theme.colors.beautifulsky};
         cursor: pointer;
+    }
+
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        button{
+            display: none;
+        }
     }
 `
