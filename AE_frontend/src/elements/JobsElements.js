@@ -1,7 +1,7 @@
 import styled from "styled-components"
 //Fixa!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 export const JobsWrapper = styled.section`
-    padding: 5rem 0;
+    padding: 4rem 0;
     `
 
 export const Div = styled.div`
@@ -11,7 +11,7 @@ export const Div = styled.div`
     padding: 0 1rem;
 
     @media ${props => props.theme.breakpoints.largescreen}{
-        width: 90vw;
+        width: 80vw;
         display: grid;
         grid-template-columns: 200px 1fr;
         column-gap: 4rem;
@@ -28,7 +28,7 @@ export const ButtonWrapper = styled.div`
         background: transparent;
         border-color: transparent;
         text-transform: capitalize;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         letter-spacing: var(--spacing);
         margin: 0 0.5rem;
         cursor: pointer;

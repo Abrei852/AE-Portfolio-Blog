@@ -54,6 +54,7 @@ export const HeroWrapper = styled.header`
     `
     export const Article = styled.article`
         margin: 1.5rem auto 0 auto;
+        
         @media ${props => props.theme.breakpoints.largescreen}{
             margin: 1.5rem auto 0 auto;
         }

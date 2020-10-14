@@ -41,7 +41,7 @@ export default {
     //--- BREAKPOINTS ---\\
     breakpoints: {
         mediumscreen: "only screen and (min-width: 768px)",  
-        largescreen: "only screen and (min-width: 992px)",
+        largescreen: "only screen and (min-width: 960px)",
         xlargescreen: "only screen and (min-width: 1200px)",
     },
     //--- /BREAKPOINTS ---\\

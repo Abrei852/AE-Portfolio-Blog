@@ -24,10 +24,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         </ProjectStackWrapper>
         <ProjectLinkWrapper>
           <a href={github}>
-            <FaGithubSquare size={40}/>
+            <FaGithubSquare size={35}/>
           </a>
           <a href={url}>
-            <FaShareSquare size={44}/>
+            <FaShareSquare size={37}/>
           </a>
         </ProjectLinkWrapper>
       </InfoWrapper>
