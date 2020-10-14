@@ -30,4 +30,12 @@ export const NavHeaderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    button{
+        font-size: 2rem;
+        background: transparent;
+        border-color: transparent;
+        color: ${props => props.theme.colors.beautifulsky};
+        cursor: pointer;
+    }
 `
