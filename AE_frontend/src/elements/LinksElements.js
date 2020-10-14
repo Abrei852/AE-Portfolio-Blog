@@ -22,6 +22,7 @@ export const Ul = styled.ul`
             text-transform: capitalize;
             color: black;
             font-size: 1.3rem;
+            margin-left: 1.5rem;
         }
     }
 `
