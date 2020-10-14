@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const Ul = styled.ul`
     margin-top: -10rem;
-    a{
-        display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
+    display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
+
+    li a{
         text-align: center;
         text-transform: capitalize;
         color: ${props => props.theme.colors.grey5};
@@ -13,20 +14,15 @@ export const Ul = styled.ul`
     }
 
     @media ${props => props.theme.breakpoints.mediumscreen}{
+        margin-top: auto;
+        display: flex;
+        justify-content: flex-end;
 
-        ul{
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        li{
+        li a{
             margin-right: 2rem;
-
-            a{
-                text-transform: capitalize;
-                color: black;
-                padding: 0.5rem 0;
-            }
+            text-transform: capitalize;
+            color: black;
+            font-size: 1.2rem;
         }
     }
 `
