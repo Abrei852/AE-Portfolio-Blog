@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const JobWrapper = styled.article`
-    min-height: 420px;
+    min-height: 300px;
 `
 export const Div = styled.div`
     display: grid;
