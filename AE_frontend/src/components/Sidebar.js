@@ -5,12 +5,12 @@ import { SidebarWrapper } from "../elements/SidebarElements"
 import { FaTimes } from "react-icons/fa"
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
-    <SidebarWrapper isOpen={isOpen}>
-      <button className="close-btn" onClick={toggleSidebar}>
+    <SidebarWrapper isOpen={isOpen} toggleSidebar={toggleSidebar}>
+      <button onClick={toggleSidebar}>
         <FaTimes />
       </button>
-      <div className="side-container">
-        <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
+      <div>
+        <Links toggleSidebar={toggleSidebar} />
         <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} />
       </div>
     </SidebarWrapper>

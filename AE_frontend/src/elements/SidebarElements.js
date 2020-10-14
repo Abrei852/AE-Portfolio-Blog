@@ -12,4 +12,22 @@ export const SidebarWrapper = styled.aside`
     place-items: center;
     transform: ${({ isOpen }) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
     transition: all 0.2s;
+
+    button{
+        position: absolute;
+        right: 3%;
+        top: 2%;
+        font-size: 2.5rem;
+        background: transparent;
+        border-color: transparent;
+        color: darkred;
+        cursor: pointer;
+    }
+
+`
+export const SideContainer = styled.div`
+    display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
+    ul{
+        color: blue;
+    }
 `
