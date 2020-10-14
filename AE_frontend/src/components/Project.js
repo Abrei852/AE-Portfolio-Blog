@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
-import { ProjectWrapper, InfoWrapper } from "../elements/ProjectElements"
+import { ProjectWrapper, InfoWrapper, ProjectStackWrapper, ProjectLinkWrapper } from "../elements/ProjectElements"
 import { H2, H3, P } from "../elements/TypographyElements"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 
@@ -17,19 +17,19 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         {/* if title is not supplied, set a defualt title */}
         <H3 fontsize="medium" transform="cap" align="center">{title || "Projekt"}</H3>
         <P fontsize="small" align="center">{description}</P>
-        <div className="project-stack">
+        <ProjectStackWrapper>
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>
           })}
-        </div>
-        <div className="project-links">
+        </ProjectStackWrapper>
+        <ProjectLinkWrapper>
           <a href={github}>
-            <FaGithubSquare className="project-icon" />
+            <FaGithubSquare size={40}/>
           </a>
           <a href={url}>
-            <FaShareSquare className="project-icon" />
+            <FaShareSquare size={44}/>
           </a>
-        </div>
+        </ProjectLinkWrapper>
       </InfoWrapper>
     </ProjectWrapper>
   )
