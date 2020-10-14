@@ -25,9 +25,3 @@ export const SidebarWrapper = styled.aside`
     }
 
 `
-export const SideContainer = styled.div`
-    display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
-    ul{
-        color: blue;
-    }
-`

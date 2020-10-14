@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
 export const LinksWrapper = styled.div`
-    ul{
+    ul a{
         display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
         text-align: center;
         text-transform: capitalize;
         color: ${props => props.theme.colors.grey5};
-        letter-spacing: var(--spacing);
-        margin-bottom: 0.5rem;
-        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
     }
 
     @media ${props => props.theme.breakpoints.mediumscreen}{
