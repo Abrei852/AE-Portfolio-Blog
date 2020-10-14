@@ -66,6 +66,7 @@ export default {
     transform: {
         UC: "uppercase",
         LC: "lowercase",
+        Cap: "capitalize"
     },
     //--- /TEXT TRANSFORM ---\\
 

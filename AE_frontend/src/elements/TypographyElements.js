@@ -32,6 +32,9 @@ export const H1 = styled.h1`
             case "lc":
                 return props.theme.transform.LC
 
+            case "cap":
+                return props.theme.transform.Cap
+
             default:
                 return props.theme.transform.LC
         }
@@ -68,6 +71,9 @@ export const H2 = styled.h2`
 
             case "lc":
                 return props.theme.transform.LC
+                
+            case "cap":
+                return props.theme.transform.Cap
 
             default:
                 return props.theme.transform.LC
@@ -105,6 +111,9 @@ export const H3 = styled.h3`
 
             case "lc":
                 return props.theme.transform.LC
+
+            case "cap":
+                return props.theme.transform.Cap
 
             default:
                 return props.theme.transform.LC
@@ -158,6 +167,9 @@ export const H4 = styled.h4`
             case "lc":
                 return props.theme.transform.LC
 
+            case "cap":
+                return props.theme.transform.Cap
+
             default:
                 return props.theme.transform.LC
         }
@@ -179,6 +191,9 @@ export const P = styled.p`
 
             case "lc":
                 return props.theme.transform.LC
+
+            case "cap":
+                return props.theme.transform.Cap
 
             default:
                 return props.theme.transform.LC
