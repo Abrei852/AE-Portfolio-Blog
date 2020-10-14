@@ -19,10 +19,9 @@ export const Ul = styled.ul`
         justify-content: flex-end;
 
         li a{
-            margin-right: 2rem;
             text-transform: capitalize;
             color: black;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
 `

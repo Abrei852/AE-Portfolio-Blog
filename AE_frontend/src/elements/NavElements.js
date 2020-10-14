@@ -17,7 +17,6 @@ export const NavWrapper = styled.nav`
 `
 export const Div = styled.div`
     width: 90vw;
-    max-width: 1170px;
     margin: 0 auto;
 
     @media ${props => props.theme.breakpoints.mediumscreen}{
