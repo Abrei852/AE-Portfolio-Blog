@@ -1,5 +1,6 @@
 import React from "react"
 import Title from "./Title"
+import { Button } from "./Button"
 import Project from "./Project"
 import { Link } from "gatsby"
 const Projects = ({ projects, title, showLink }) => {
@@ -12,9 +13,7 @@ const Projects = ({ projects, title, showLink }) => {
         })}
       </div>
       {showLink && (
-        <Link to="/projects" className="btn center-btn">
-          Alla projekt
-        </Link>
+        <Button href="projects/"> Alla projekt</Button>
       )}
     </section>
   )

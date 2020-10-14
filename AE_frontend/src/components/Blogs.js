@@ -14,7 +14,7 @@ export const Blogs = ({ blogs, title, showLink }) => {
       </Div>
       {/* If the showLink is undefined, dont show any link, otherwise show link */}
       {showLink && (
-        <Button href="/blog/">Alla artiklar</Button>
+        <Button href="blog/">Alla artiklar</Button>
       )}
     </BlogsWrapper>
   )
