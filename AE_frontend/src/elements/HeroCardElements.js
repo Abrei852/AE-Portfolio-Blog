@@ -5,7 +5,7 @@ export const HeroCardWrapper = styled.div`
     @media ${props => props.theme.breakpoints.mediumscreen}{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 6rem repeat(5, 1fr);
+        grid-template-rows: 6rem repeat(4, 1fr);
         column-gap: 1rem;
         row-gap: 1rem;
         background: transparent;
@@ -15,17 +15,21 @@ export const HeroCardWrapper = styled.div`
             font-size: 1.5rem;
             margin-bottom: 2rem;
         }
+
+        .gatsby-image-wrapper{
+            grid-column: 3 / span 2;
+            grid-row: 1 / span 4
+        }
     }
 
 `
 export const LinkWrapper = styled.div`
     @media ${ props => props.theme.breakpoints.mediumscreen}{
         grid-column: 1 / span 2;
-        grid-row: 4 / span 3;
+        grid-row: 4 / span 1;
         box-shadow: ${props => props.theme.shadows.shadow2};
         padding: 1rem;
         text-align: center;
-        margin: 0 0 auto;
 
         a{
             font-size: 1.3rem;
@@ -43,7 +47,6 @@ export const AboutMeWrapper = styled.div`
         grid-row: 1 / span 3;
         box-shadow: ${props => props.theme.shadows.shadow2};
         padding: 1rem;
-        margin: auto 0;
 
         p{
             margin-bottom: 2rem;

@@ -1,6 +1,5 @@
 import React from "react"
 import Image from "gatsby-image"
-import { FaHeart } from "react-icons/fa"
 import Title from "./Title"
 import { HeroWrapper, Div, Article, H2, P } from "../elements"
 import { Button } from "../components/Button"
@@ -40,7 +39,6 @@ const Hero = () => {
           <Button href="contact/">Kontakta mig</Button>
           <SocialLinks />
         </Article>
-        <Image fluid={fluid}/>
       </Div>
     </HeroWrapper>
 

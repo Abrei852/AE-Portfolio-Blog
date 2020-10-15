@@ -1,8 +1,27 @@
 import React from "react"
 import { HeroCardWrapper, LinkWrapper, AboutMeWrapper } from "../elements/HeroCardElements"
 import { H2, P } from "../elements/TypographyElements"
+import Image from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
+
+const query = graphql`
+  {
+    file(relativePath: { eq: "hero-img.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export const HeroCard = () => {
+    const {
+        file: {
+          childImageSharp: { fluid },
+        },
+      } = useStaticQuery(query)
     return(
         <HeroCardWrapper>
             <AboutMeWrapper>
@@ -45,6 +64,7 @@ export const HeroCard = () => {
                 Xamarin
                 </a>
             </LinkWrapper>
+            <Image fluid={fluid}/>
 
         </HeroCardWrapper>
     )

@@ -6,33 +6,6 @@ export const HeroWrapper = styled.header`
     height: 100vh;
     background: white;
     position: relative;
-
-    .gatsby-image-wrapper{
-        display: none;
-    }
-
-    @media ${props => props.theme.breakpoints.mediumscreen}{
-        ::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 65%;
-            right: 0;
-            bottom: 0;
-            background: white;
-        }
-        .gatsby-image-wrapper{
-            display: block;
-            grid-row: 1/1;
-            grid-column: 8 / -1;
-        }
-    }
-
-    @media ${props => props.theme.breakpoints.largescreen}{
-        ::before{
-            top: 0;
-        }
-    }
 `
 export const Div = styled.div`
     margin: auto;
