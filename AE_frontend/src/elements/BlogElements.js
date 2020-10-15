@@ -9,4 +9,8 @@ export const BlogWrapper = styled.article`
         box-shadow: ${props => props.theme.shadows.shadow2};
         transform: scale(1.02);
     }
+
+    .gatsby-image-wrapper{
+        height: 20rem;
+    }
 `
