@@ -27,10 +27,10 @@ export const HeroCard = () => {
     return(
         <HeroCardWrapper>
             <AboutMeWrapper>
-                <H2 transform="uc" align="center" >Kort om mig</H2>
+                <H2 transform="uc" align="center">Kort om mig</H2>
                 <P transform="cap" align="center">Jag tycker om att koda</P>
                 <P transform="cap" align="center">Jag lär mig react och gatsby</P>
-                <P transform="cap" align="center">Finns inget roligare än styled components</P>
+                <P transform="cap" align="center">styled components {'>'} Css</P>
             </AboutMeWrapper>
             <LinkWrapper>
                 <H2 transform="uc" align="center">Favoritspråk</H2>

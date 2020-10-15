@@ -3,9 +3,10 @@ import styled from "styled-components"
 export const HeroWrapper = styled.header`
     margin-top: -5rem;
     padding-top: 5rem;
-    height: 100vh;
     background: white;
+    max-width: 1200px;
     position: relative;
+    margin: auto;
 `
 export const Div = styled.div`
     margin: auto;
