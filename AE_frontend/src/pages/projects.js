@@ -11,9 +11,7 @@ const ProjectsPage = ({
 }) => {
   return (
     <Layout>
-      <section className="project-page">
         <Projects projects={projects} title="Alla projekt" />
-      </section>
     </Layout>
   )
 }
