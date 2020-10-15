@@ -4,7 +4,6 @@ import { FaHeart } from "react-icons/fa"
 import Title from "./Title"
 import { HeroWrapper, Div, Article, H2 } from "../elements"
 import { Button } from "../components/Button"
-import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 // ...GatsbyImageSharpFluid
