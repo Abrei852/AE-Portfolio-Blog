@@ -117,7 +117,7 @@ const Hero = () => {
           <Button href="contact/">Kontakta mig</Button>
           <SocialLinks />
         </Article>
-
+        <Image fluid={fluid} className="hero-img" />
       </Div>
     </HeroWrapper>
   )

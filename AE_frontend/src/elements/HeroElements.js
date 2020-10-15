@@ -42,7 +42,6 @@ export const HeroWrapper = styled.header`
 export const Div = styled.div`
     width: 90vw;
     margin: 0 auto;
-    max-width: 1170px;
     display: grid;
     align-items: center;
     height: 100%;
