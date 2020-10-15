@@ -5,6 +5,10 @@ export const ProjectWrapper = styled.article`
     margin-bottom: 4rem;
     background: ${props => props.theme.colors.grey8};
 
+    .gatsby-image-wrapper{
+        height: 20rem;
+    }
+
     :hover{
         transform: scale(1.02);
         box-shadow: ${props => props.theme.shadows.shadow2};
