@@ -24,4 +24,8 @@ export const SidebarWrapper = styled.aside`
         cursor: pointer;
     }
 
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        display: none;
+    }
+
 `
