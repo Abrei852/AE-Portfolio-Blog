@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const HeroCardWrapper = styled.div`
+    .gatsby-image-wrapper{
+        display:none;
+    }
 
     @media ${props => props.theme.breakpoints.mediumscreen}{
         display: grid;
@@ -17,8 +20,14 @@ export const HeroCardWrapper = styled.div`
         }
 
         .gatsby-image-wrapper{
+            display: block;
             grid-column: 3 / span 2;
             grid-row: 1 / span 4
+        }
+
+        ul{
+            grid-column: 2 / span 2;
+            margin: auto;
         }
     }
 
@@ -49,7 +58,8 @@ export const AboutMeWrapper = styled.div`
         padding: 1rem;
 
         p{
-            margin-bottom: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
         }
     }
 `

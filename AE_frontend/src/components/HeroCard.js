@@ -3,6 +3,8 @@ import { HeroCardWrapper, LinkWrapper, AboutMeWrapper } from "../elements/HeroCa
 import { H2, P } from "../elements/TypographyElements"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import SocialLinks from "../constants/socialLinks"
+import { Button } from "../components/Button"
 
 const query = graphql`
   {
@@ -65,7 +67,8 @@ export const HeroCard = () => {
                 </a>
             </LinkWrapper>
             <Image fluid={fluid}/>
-
+            <SocialLinks/>
+            <Button href="contact/">Kontakta mig</Button>
         </HeroCardWrapper>
     )
 }

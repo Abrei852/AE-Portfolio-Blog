@@ -18,7 +18,7 @@ display: block;
 width: 15rem;
 text-align: center;
 margin: 0 auto;
-margin-top: 3rem;           
+margin: auto;           
 
 &:hover,
 &:focus {
