@@ -4,7 +4,7 @@ export const HeroWrapper = styled.header`
     margin-top: -5rem;
     padding-top: 5rem;
     height: 100vh;
-    background: ${props => props.theme.colors.beautifulsky};
+    background: white;
     position: relative;
 
     .gatsby-image-wrapper{
@@ -25,6 +25,12 @@ export const HeroWrapper = styled.header`
             display: block;
             grid-row: 1/1;
             grid-column: 8 / -1;
+        }
+    }
+
+    @media ${props => props.theme.breakpoints.largescreen}{
+        ::before{
+            top: 0;
         }
     }
 `
