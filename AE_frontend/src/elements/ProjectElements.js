@@ -6,7 +6,7 @@ export const ProjectWrapper = styled.article`
     background: ${props => props.theme.colors.grey8};
 
     .gatsby-image-wrapper{
-        height: 20rem;
+        height: 25rem;
     }
 
     :hover{
@@ -19,16 +19,6 @@ export const ProjectWrapper = styled.article`
         z-index: 1;
     }
 
-    img::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
-        opacity: 0.85;
-    }
     @media ${props => props.theme.breakpoints.mediumscreen}{
         grid-template-columns: repeat(12, 1fr);
         align-items: center;
