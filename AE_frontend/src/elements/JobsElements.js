@@ -1,5 +1,5 @@
 import styled from "styled-components"
-//Fixa!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 export const JobsWrapper = styled.section`
     padding: 4rem 0;
     `

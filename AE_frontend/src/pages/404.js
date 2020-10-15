@@ -1,19 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Link } from "gatsby"
-import SEO from "../components/SEO"
+import { ErrorPageWrapper } from "../elements/PageElements"
+import { Button } from "../components/Button"
 
 const Error = () => {
   return (
     <Layout>
-      <main className="error-page">
-        <div className="error-container">
+      <ErrorPageWrapper>
+        <div>
           <h1>Oj, Något gick fel</h1>
-          <Link to="/" className="btn">
-            Tillbaka Hem
-          </Link>
+          <Button href="/">Tillbaka hem</Button>
         </div>
-      </main>
+      </ErrorPageWrapper>
     </Layout>
   )
 }
