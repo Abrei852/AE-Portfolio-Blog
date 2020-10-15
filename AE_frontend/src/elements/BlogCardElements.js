@@ -5,3 +5,10 @@ export const BlogCardWrapper = styled.div`
     grid-template-rows: auto 1fr auto;
     padding: 1.5rem 1rem;
 `
+export const Div = styled.div`
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+`

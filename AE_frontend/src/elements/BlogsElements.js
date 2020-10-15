@@ -12,5 +12,9 @@ export const Div = styled.div`
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
         column-gap: 2rem;
+
+        picture{
+            height: 1vw;
+        }
     }
 `
