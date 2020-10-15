@@ -2,7 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { FaHeart } from "react-icons/fa"
 import Title from "./Title"
-import { HeroWrapper, Div, Article, H2 } from "../elements"
+import { HeroWrapper, Div, Article, H2, P } from "../elements"
 import { Button } from "../components/Button"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
@@ -35,12 +35,8 @@ const Hero = () => {
       <Div>
         <Article>
           <H2>Systemutvecklare .Net</H2>
-          <ul>
-
-            <li>
              <FaHeart size={15} color="purple" /> 
-              
-            {" "}
+             {" "}
             | <a
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +53,6 @@ const Hero = () => {
             >
               React
             </a> |
-
             {" "}
             <a
               target="_blank"
@@ -83,37 +78,17 @@ const Hero = () => {
               href="https://dotnet.microsoft.com/apps/xamarin"
             >
               Xamarin
-            </a> |
-            </li>
+            </a> | <br/>
 
-            <li>
-            - 🔭 I’m currently working on my own Portfolio site
-            </li>
-
-            <li>
-            - 🌱 I’m currently learning React, Gatsby, GraphQL
-            </li>
-
-            <li>
-            - 🤔 I’m looking for help with anything frontend 
-            </li>
-
-            <li>
-            - 💬 Ask me about Rhodesian Ridgebacks
-            </li>
-
-            <li>
-            - 😄 Pronouns: Inquisitive, break the mold..
-            </li>
-
-            <li>
-            - ⚡ Fun fact: I used to fly planes
-            </li>
-
-            <li>
-            - 📫 How to reach me: use the link below
-            </li>
-          </ul>
+            <P>
+              - I’m currently working on my own xamarin app<br/> 
+              - I’m currently learning React, Gatsby, GraphQL <br/>
+              - I’m looking for help with anything frontend <br/>
+              - Ask me about Rhodesian Ridgebacks <br/>
+              - Pronouns: Inquisitive, break the mold..<br/>
+              - I’m looking for help with anything frontend <br/>
+              - I’m looking for help with anything frontend <br/>
+            </P>
           <Button href="contact/">Kontakta mig</Button>
           <SocialLinks />
         </Article>
