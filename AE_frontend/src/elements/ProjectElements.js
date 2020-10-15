@@ -24,11 +24,25 @@ export const ProjectWrapper = styled.article`
         height: 100%;
         background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
         opacity: 0.85;
-        transition: var(--transition);
+    }
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        
+        .gatsby-image-wrapper{
+            grid-column: 1/ span 5;
+            height: 30rem;
+        }
     }
 `
 export const InfoWrapper = styled.div`
     padding: 1rem 1rem;
+
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        z-index: 1;
+        grid-column: 6 /13;
+        grid-row: 1 / 1;
+    }
 `
 export const ProjectStackWrapper = styled.div`
     margin-bottom: 3rem;
