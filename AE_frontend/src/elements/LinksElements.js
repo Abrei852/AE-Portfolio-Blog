@@ -29,12 +29,12 @@ export const Ul = styled.ul`
         li a{
             text-transform: capitalize;
             color: black;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-left: 1.5rem;
         }
     }
 
-    @media ${props => props.theme.breakpoints.largescreen}{
+    @media ${props => props.theme.breakpoints.xlargescreen}{
         li a{
             font-size: 1.5rem;
         }
