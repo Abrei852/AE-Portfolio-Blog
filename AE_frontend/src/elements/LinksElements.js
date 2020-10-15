@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Ul = styled.ul`
-    margin-top: -10rem;
     display: ${({ toggleSidebar }) => toggleSidebar ? 'block' : 'none'};
     text-align: center;
     text-transform: capitalize;
