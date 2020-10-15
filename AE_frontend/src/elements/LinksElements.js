@@ -8,7 +8,6 @@ export const Ul = styled.ul`
     margin-bottom: 4rem;
     font-size: 1.5rem;
 
-
     li{
         margin-bottom: 3rem;
     }
@@ -30,8 +29,14 @@ export const Ul = styled.ul`
         li a{
             text-transform: capitalize;
             color: black;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-left: 1.5rem;
+        }
+    }
+
+    @media ${props => props.theme.breakpoints.largescreen}{
+        li a{
+            font-size: 1.5rem;
         }
     }
 `

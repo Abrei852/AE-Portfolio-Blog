@@ -5,10 +5,6 @@ export const BlogWrapper = styled.article`
     margin-bottom: 2rem;
     background: ${props => props.theme.colors.grey8};
 
-    img{
-        height: 1rem;
-    }
-
     :hover{
         box-shadow: ${props => props.theme.shadows.shadow2};
         transform: scale(1.02);

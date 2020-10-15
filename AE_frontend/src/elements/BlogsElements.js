@@ -7,10 +7,10 @@ export const Div = styled.div`
     width: 90vw;
     margin: 0 auto;
     max-width: ${props => props.theme.width.width1};
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    column-gap: 2rem;
 
     @media ${props => props.theme.breakpoints.mediumscreen}{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+        column-gap: 2rem;
     }
 `
