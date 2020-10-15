@@ -3,13 +3,13 @@ import styled from "styled-components"
 export const HeroCardWrapper = styled.div`
     box-shadow: ${props => props.theme.shadows.shadow2};
     padding: 1rem;
-    margin: 0 auto 2rem;
+    
     .gatsby-image-wrapper{
         display:none;
     }
 
     ul{
-        margin: 3rem auto 1rem;
+        visibility: hidden;
     }
 
     p{
@@ -45,8 +45,10 @@ export const HeroCardWrapper = styled.div`
         }
 
         ul{
+            visibility: visible;
             grid-column: 1 / span 3;
             grid-row: 5;
+            margin: auto;
         }
     }
 
