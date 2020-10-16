@@ -6,7 +6,7 @@ export const BlogCard = ({title, desc, category, date}) => {
     return(
         <BlogCardWrapper>
             <H4 transform="uc" align="center" fontsize="small">{title}</H4>
-            <P fontsize="xsmall" align="center">{desc}</P>
+            <P transform="cap" fontsize="xsmall" align="center">{desc}</P>
             <Div>
                 <P transform="uc" fontsize="xsmall" align="center">{category}</P>
                 <P fontsize="xsmall" align="center">{date}</P>
