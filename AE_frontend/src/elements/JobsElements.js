@@ -7,7 +7,7 @@ export const JobsWrapper = styled.section`
 export const Div = styled.div`
     width: 90vw;
     margin: 0 auto;
-    max-width: var(--max-width);
+    max-width: ${props => props.theme.width.width1};
     padding: 0 1rem;
 
     @media ${props => props.theme.breakpoints.largescreen}{
@@ -29,7 +29,7 @@ export const ButtonWrapper = styled.div`
         border-color: transparent;
         text-transform: capitalize;
         font-size: 1.2rem;
-        letter-spacing: var(--spacing);
+        letter-spacing: 0.2rem;
         margin: 0 0.5rem;
         cursor: pointer;
         padding: 0.25rem 0;

@@ -5,7 +5,7 @@ import { FooterWrapper } from "../elements/FooterElements"
 const Footer = () => {
   return (
     <FooterWrapper>
-        <SocialLinks styleClass="footer-links"></SocialLinks>
+        <SocialLinks />
         <h4>
           copyright&copy; {new Date().getFullYear()} | &nbsp;
           <span>Abraham Eishow</span> | all rights reserved

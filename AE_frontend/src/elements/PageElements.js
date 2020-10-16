@@ -52,3 +52,20 @@ export const ContactFormWrapper = styled.article`
         }
     }
 `
+export const AboutWrapper = styled.section`
+    min-height: calc(100vh - 5rem - 9rem);
+    padding: 7rem 0;
+`
+export const AboutInfoWrapper = styled.div`
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+    }
+`
