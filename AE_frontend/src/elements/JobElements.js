@@ -8,5 +8,4 @@ export const Div = styled.div`
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     align-items: center;
-    margin: 0 auto;
 `
