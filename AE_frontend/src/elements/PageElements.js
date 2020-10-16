@@ -69,3 +69,30 @@ export const AboutInfoWrapper = styled.div`
         column-gap: 4rem;
     }
 `
+export const Article = styled.article`
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 2;
+
+    @media ${props => props.theme.breakpoints.mediumscreen}{
+        grid-column: 6 / -1;
+    }
+
+    div{
+        text-transform: uppercase;
+        background: ${props => props.theme.colors.beautifulsky};
+        color: black;
+        padding: 0.375rem 0.75rem;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 0.875rem;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+    a{
+        display: inline-block;
+        margin: 0 1rem;
+    }
+`
