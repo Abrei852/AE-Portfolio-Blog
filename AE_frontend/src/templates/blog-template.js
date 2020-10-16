@@ -1,6 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import { Button } from "../components/Button"
+import { TemplateWrapper, CenterWrapper } from "../elements/BlogTemplateElements"
 import ReactMarkdown from "react-markdown"
 import SEO from "../components/SEO"
 
@@ -10,16 +12,14 @@ const ComponentName = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={desc}/>
-      <section className="blog-template">
-        <div className="section-center">
-          <article className="blog-content">
+      <TemplateWrapper>
+        <CenterWrapper>
+          <article>
             <ReactMarkdown source={content} />
           </article>
-          <Link to="/blog" className="btn center-btn">
-            Alla artiklar
-          </Link>
-        </div>
-      </section>
+          <Button href="blog/">Alla Artiklar</Button>
+        </CenterWrapper>
+      </TemplateWrapper>
     </Layout>
   )
 }

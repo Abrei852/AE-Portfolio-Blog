@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ErrorPageWrapper = styled.main`
     background: white;
     text-align: center;
-    height: 76vh;
+    min-height: calc(100vh - 5rem - 9rem);
 `
 export const ContactPageWrapper = styled.section`
     display: grid;
