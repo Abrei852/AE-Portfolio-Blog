@@ -24,15 +24,12 @@ const query = graphql`
 
 const Jobs = () => {
   const data = useStaticQuery(query)
-  console.log(data)
   // destructering
   const {
     allStrapiJobs: { nodes: jobs },
   } = data
-  console.log(jobs)
   const [value, setValue] = React.useState(0)
   const { company, position, date, desc } = jobs[value]
-  console.log(company, position, date, desc)
 
   return (
     <JobsWrapper>

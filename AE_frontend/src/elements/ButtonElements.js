@@ -16,7 +16,7 @@ box-shadow: ${props => props.theme.colors.shadow1};
 color: black;
 display: block;
 text-align: center;
-margin: 2rem auto;          
+margin: auto;          
 
 &:hover,
 &:focus {

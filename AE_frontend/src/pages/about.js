@@ -9,7 +9,6 @@ import SEO from "../components/SEO"
 import downloadFile from "../../static/AECV.pdf"
 // ...GatsbyImageSharpFluid
 const About = () => {
-  //console.log(nodes)
   return (
     <Layout>
       <SEO title="CV" description="Abrahams CV" />
