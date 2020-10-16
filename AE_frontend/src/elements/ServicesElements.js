@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const ServicesWrapper = styled.section`
     padding: 5rem 0;
     background-color: ${props => props.theme.colors.grey8};
+
+    h4{
+        background: transparent;
+    }
 `
 
     export const Div = styled.div `
@@ -37,6 +41,9 @@ export const ServicesWrapper = styled.section`
             color: white;
             div{
                 background: white;
+            }
+            h4{
+                color: white;
             }
         }
         `  

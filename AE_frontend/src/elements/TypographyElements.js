@@ -224,9 +224,7 @@ export const H4 = styled.h4`
     }};
     color: ${props => props.theme.colors.grey5};
     background: ${props => props.theme.colors.grey7};
-    display: inline-block;
     padding: 0.375rem 0.75rem;
-    border-radius: var(--radius);
 `
 //Styling for the P tag
 export const P = styled.p`

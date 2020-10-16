@@ -1,6 +1,7 @@
 import React from "react"
 import Title from "./Title"
 import { ServicesWrapper, Div, Article } from "../elements/ServicesElements"
+import { H4, P} from "../elements/TypographyElements"
 import { Underline } from "../elements/SpecialElements"
 import services from "../constants/services"
 const Services = () => {
@@ -15,9 +16,9 @@ const Services = () => {
           return (
             <Article key={id} >
               {icon}
-              <h4>{title}</h4>
+              <H4 fontsize="small" align="center" transform="cap">{title}</H4>
               <Underline/>
-              <p>{text}</p>
+              <P transform="cap">{text}</P>
             </Article>
           )
         })}
