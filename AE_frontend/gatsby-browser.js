@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
 }
 body {
   font-family: "Roboto";
-  background: white;;
+  background-color: white;  
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
